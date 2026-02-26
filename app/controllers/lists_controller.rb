@@ -20,8 +20,6 @@ class ListsController < ApplicationController
     end
   end
 
-
-
    private
 
    def list_params
@@ -49,10 +47,3 @@ end
 #     @flat.destroy
 #     redirect_to flats_path, status: :see_other
 #   end
-
-#   private
-
-#   def flat_params
-#     params.require(:flat).permit(:name, :address, :description, :price_per_night, :number_of_guests)
-#   end
-# end
