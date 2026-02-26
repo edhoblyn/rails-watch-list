@@ -1,6 +1,9 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=60');">
-  <div class="container text-center">
-    <h1>Save any kind of movies</h1>
+<div class="banner d-flex align-items-center justify-content-center"
+     style="background-image: linear-gradient(rgba(100, 64, 64, 0.3), rgba(0,0,0,0.3)),
+            url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=60');" id="banner">
+
+  <div class="text-center text-white">
+    <h1 class="display-4 fw-bold text-warning">Save any kind of movies</h1>
   </div>
 </div>
 
@@ -13,7 +16,7 @@
     <% @lists.each do |list| %>
       <div class="col-12 col-sm-6 col-md-4 mb-4">
         <div class="card-category"
-             style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+             style="background-image: linear-gradient(rgba(100, 64, 64, 0.3), rgba(0,0,0,0.3)),
                     url('https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=1200&q=60');">
           <%= link_to list.name, list_path(list), class: "text-white text-decoration-none fw-bold" %>
         </div>
