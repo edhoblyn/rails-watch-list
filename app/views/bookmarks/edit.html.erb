@@ -1,0 +1,8 @@
+<h1>Edit bookmark</h1>
+
+<%= simple_form_for @bookmark do |f| %>
+  <%= f.input :comment %>
+  <%= f.submit "Update", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Back", list_path(@bookmark.list), class: "btn btn-secondary mt-3" %>
